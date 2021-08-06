@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+*{
+  margin:0 ;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color:lightgray;
+}
+.app__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+.app__left{
+  flex:0.8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.add_delete_button
+{
+  display:inline;
+  justify-content: space-evenly;
+}
+
+
+.app__right
+{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.map_box
+{
+  
+  justify-content: space-evenly;
+  border-radius:8px;
+  padding: 25px;
+  border: 2px solid black;
+}
+.worldMap
+{
+  object-fit: cover;
+  max-width: 100%;
+  height: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.links
+{
+  display:flex;
+  align-items:baseline;  
+  justify-content: space-between;
+}
+@media(max-width:800px)
+{
+  .app{
+    flex-direction: column;
   }
 }
